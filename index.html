@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALEX COMPANY</title>
+
+    <!-- CSS External Link -->
+        <link rel="stylesheet" href="CSS/styles.css">
+    <!-- Tailwind CSS CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <!-- Header Content -->
+    <header class="flex justify-between items-center bg-gray-200 p-[8px]">  
+  
+         <!-- Logo Icon  -->
+         <div class="h-16 w-16 bg-[url('https://picsum.photos/200')] rounded-full bg-center bg-cover "></div>
+    
+        <nav class="flex">
+            <a class="border rounded-[4px] py-[4px] px-[8px] text-decoration-none" href="#">Home</a>
+            <a class="border rounded-[4px] py-[4px] px-[8px] text-decoration-none" href="#">Our Profile</a>
+            <a class="border rounded-[4px] py-[4px] px-[8px] text-decoration-none" href="#">Message Us</a>
+        
+        
+        </nav>
+    
+    </header>
+
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Content -->
+        <section id="home-pages">
+            <header>
+                <h1 class="text-2xl font-bold text-center my-4"> Hii <span id="Welcome-user">[User]</span>, Welcome to Our Website !! </h1>
+            </header>
+            <div>
+                <p class="text-center">This is the travelling page content, feel free to explore our website !!</p>
+                <div class="banner-img"></div>
+            </div>
+            
+        </section>
+
+    <hr/>
+
+        <!-- Our Profile Content -->
+        <section id="our-profile">
+            <header>
+                <h2 class="text-xl font-semibold text-center my-4">About Our Profile <br><i>"Alex Company"</i></h2>
+            </header>
+
+            <article>
+                 <p class="text-center">
+                    Inspiring Journeys. Authentic Stories.<br>
+                    ALEX Company is a premier travel content brand dedicated to exploring the world through compelling storytelling, immersive visuals, and expert insights. <br> We specialize in creating high-quality travel content that connects global audiences with authentic experiences, destinations, and cultures.<br>
+                    From detailed destination guides and travel documentaries to social media campaigns and branded partnerships, ALEX Company crafts narratives that inspire adventure and meaningful exploration. Our content is tailored for travelers, tourism boards, lifestyle brands, and media platforms seeking to elevate their presence in the global travel market.<br><br>
+                    At ALEX Company, we believe that travel is more than movement—it's a bridge between people, cultures, and stories. Join us as we turn the world into your next adventure.<br><br>
+                    <b>Email: alexcompanytravels@gmail.com<br></b>
+                    <b>Instagram | YouTube | TikTok: @alexcompanytravels </b>
+                </p>
+            </article>
+        </section>
+    <hr/>
+
+        <!-- Message Us Content -->
+        <section id="message-us">
+            <header>
+                <h2 class="text-xl font-semibold text-center my-4">Message Us</h2>
+            </header>
+
+                <form>
+                    <div class="flex flex-col items-center">
+                        <label for="name-input" class="mb-2">Name:</label>
+                        <input type="text" id="name-input" name="name" class="border rounded p-2 mb-4 w-1/2">
+
+                        <label for="date-input" class="mb-2">Date of Birth:</label>
+                        <input type="date" id="date-input" name="date" class="border rounded p-2 mb-4 w-1/2">
+
+                        <label for="message-input" class="mb-2">Message (Optional):</label>
+                        <textarea id="message-input" name="message" class="border rounded p-2 mb-4 w-1/2"></textarea>
+
+
+                        <label for="select-input" class="mb-2">Gender:</label>
+                        <select id="select-input" name="options" class="border rounded p-2 mb-4 w-1/2">
+                            <option value="option1">Female</option>
+                            <option value="option2">Male</option>
+                            <option value="option3">Other</option>
+                            <option value="option4">Prefer not to say</option>
+                        </select>   
+
+                        <button onclick="validateForm();" type="button" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition duration-300">Send Message</button>
+                     </div>
+                 </form>
+
+                 <div id="message-output" class="text-center mt-4">Result:</div>
+        </section>
+    </main>
+
+    <!-- Footer Content -->
+    <footer>
+        <p class="text-center text-gray-600 mt-4">© 2025 ALEX COMPANY. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript External Link -->
+    <script src="JS/script.js"></script>
+</body>
+</html>
